@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:baselineAligned="false"
+    android:gravity="top|center">
+
+    <TextView
+        android:text="Dodaj produkty "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_weight="0.13"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:gravity="center" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/d_name"
+        android:layout_weight="0.05"
+        android:hint="Nazwa produktu"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/d_qty"
+        android:layout_weight="0.04"
+        android:hint="Ilość produktu"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/d_price"
+        android:layout_weight="0.07"
+        android:hint="Cena produktu"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:text="Zapisz "
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:onClick="saveData"
+        android:layout_weight="0.03" />
+
+</LinearLayout>
